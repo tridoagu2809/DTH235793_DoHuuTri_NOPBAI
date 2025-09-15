@@ -1,0 +1,25 @@
+# ===== Kiểm tra các trường hợp với i, j, k =====
+
+cases = {
+    "a": (3, 5, 7),
+    "b": (3, 7, 5),
+    "c": (5, 3, 7),
+    "d": (5, 7, 3),
+    "e": (7, 3, 5),
+    "f": (7, 5, 3),
+}
+
+# Các biểu thức Boolean cần kiểm tra
+expressions = {
+    "i < j < k": lambda i, j, k: i < j < k,
+    "i + j == k": lambda i, j, k: i + j == k,
+    "i * j > k": lambda i, j, k: i * j > k,
+    "(i == 3) or (k == 7)": lambda i, j, k: (i == 3) or (k == 7),
+    "(j != 5) and (i < k)": lambda i, j, k: (j != 5) and (i < k),
+}
+
+# Chạy từng trường hợp
+for case, (i, j, k) in cases.items():
+    print(f"\nCase {case}: i={i}, j={j}, k={k}")
+    for desc, func in expressions.items():
+        print(f"{desc}: {func(i, j, k)}")
