@@ -1,0 +1,21 @@
+# ===== Ví dụ nhập dữ liệu từ bàn phím trong Python =====
+
+# 1. Nhập chuỗi
+name = input("Nhập tên của bạn: ")
+print("Xin chào,", name)
+
+# 2. Nhập số nguyên
+age = int(input("Nhập tuổi của bạn: "))
+print("Năm sau bạn sẽ", age + 1, "tuổi")
+
+# 3. Nhập số thực
+height = float(input("Nhập chiều cao (m): "))
+print("Chiều cao của bạn là:", height, "m")
+
+# 4. Nhập nhiều giá trị (chuỗi) trên một dòng
+a, b = input("Nhập 2 giá trị, cách nhau bởi khoảng trắng: ").split()
+print("a =", a, ", b =", b)
+
+# 5. Nhập nhiều số và chuyển thành danh sách số nguyên
+nums = list(map(int, input("Nhập các số nguyên, cách nhau bởi khoảng trắng: ").split()))
+print("Danh sách số nguyên:", nums)

@@ -1,0 +1,33 @@
+# Kiểu số
+x_int = 10                # int
+y_float = 3.14            # float
+z_complex = 2 + 3j        # complex
+
+# Chuỗi
+s = "Hello, Python!"      # str
+
+# Logic
+is_active = True          # bool
+
+# Danh sách (list)
+my_list = [1, 2, 3, 4, 5]
+
+# Bộ (tuple)
+my_tuple = (10, 20, 30)
+
+# Tập hợp (set)
+my_set = {1, 2, 3, 3, 4}   # tự động loại bỏ phần tử trùng
+
+# Từ điển (dict)
+my_dict = {"name": "Alice", "age": 25, "city": "Hanoi"}
+
+# In ra màn hình để kiểm tra
+print("int:", x_int)
+print("float:", y_float)
+print("complex:", z_complex)
+print("str:", s)
+print("bool:", is_active)
+print("list:", my_list)
+print("tuple:", my_tuple)
+print("set:", my_set)
+print("dict:", my_dict)

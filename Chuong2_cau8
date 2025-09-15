@@ -1,0 +1,34 @@
+# ===== Ví dụ các loại lỗi trong Python =====
+
+# 1. Lỗi cú pháp (SyntaxError)
+# Ví dụ: bỏ dấu ngoặc -> print("Hello"
+# => Lỗi này sẽ báo ngay khi chạy, nên mình chỉ ghi chú chứ không chạy được.
+
+
+# 2. Lỗi logic
+print("=== Lỗi logic ===")
+x = 5
+# Muốn tính bình phương nhưng viết sai
+print("Sai (x + x):", x + x)   # 10
+print("Đúng (x * x):", x * x) # 25
+
+
+# 3. Lỗi runtime (Exception) và cách bắt lỗi
+print("\n=== Bắt lỗi bằng try-except ===")
+try:
+    a = int(input("Nhập số nguyên a: "))
+    b = int(input("Nhập số nguyên b: "))
+    result = a / b
+    print("Kết quả a / b =", result)
+
+except ZeroDivisionError:
+    print("Lỗi: Không thể chia cho 0")
+
+except ValueError:
+    print("Lỗi: Nhập sai kiểu dữ liệu, cần số nguyên")
+
+except Exception as e:   # Bắt mọi lỗi khác
+    print("Lỗi khác:", e)
+
+finally:
+    print("Chương trình kết thúc")

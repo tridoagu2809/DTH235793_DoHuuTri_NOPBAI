@@ -1,0 +1,23 @@
+# ===== Ví dụ về ghi chú trong Python =====
+
+# Đây là ghi chú một dòng
+x = 10  # Ghi chú sau lệnh (inline comment)
+
+'''
+Đây là ghi chú nhiều dòng
+Dùng dấu nháy đơn 3 lần
+Python sẽ bỏ qua đoạn này
+'''
+y = 20
+
+"""
+Đây cũng là ghi chú nhiều dòng
+Dùng dấu nháy kép 3 lần
+Thường được dùng để mô tả code dài
+"""
+z = 30
+
+# In kết quả ra màn hình
+print("x =", x)
+print("y =", y)
+print("z =", z)

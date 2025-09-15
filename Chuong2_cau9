@@ -1,0 +1,28 @@
+# ===== Giải thích kết quả tính toán trong Python =====
+
+# 1. Chia thực
+print("7 / 2 =", 7 / 2, "-> phép chia trả về số thực (3.5)")
+
+# 2. Chia lấy phần nguyên
+print("7 // 2 =", 7 // 2, "-> chia lấy phần nguyên, bỏ phần thập phân (3)")
+print("-7 // 2 =", -7 // 2, "-> làm tròn xuống (-4)")
+
+# 3. Phép chia lấy dư
+print("7 % 2 =", 7 % 2, "-> chia 7 cho 2 dư 1")
+print("-7 % 2 =", -7 % 2, "-> Python giữ dấu của mẫu số, kết quả 1")
+
+# 4. Lũy thừa
+print("2 ** 3 =", 2 ** 3, "-> 2 mũ 3 = 8")
+
+# 5. Toán tử logic
+print("(5 > 3) and (4 > 2) =", (5 > 3) and (4 > 2), "-> cả 2 đều True nên kết quả True")
+print("(5 > 3) or (4 < 2) =", (5 > 3) or (4 < 2), "-> 1 điều kiện True nên kết quả True")
+
+# 6. So sánh is vs ==
+x = [1, 2, 3]
+y = x
+z = [1, 2, 3]
+
+print("x == z:", x == z, "-> so sánh giá trị, bằng nhau nên True")
+print("x is y:", x is y, "-> cùng trỏ tới một đối tượng nên True")
+print("x is z:", x is z, "-> khác đối tượng trong bộ nhớ nên False")
